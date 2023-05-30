@@ -5,6 +5,7 @@ const Contact = () => {
     <div className='w-full flex justify-center items-center p-4'>
         <form method='POST' action="https://getform.io/f/71713128-ea1b-4c48-8ae8-da0a0e3b2570" className='flex flex-col max-w-[1240px] w-full'>
             <div className='pb-8'>
+              
                 <p className='text-4xl font-bold '>Contact</p>
             </div>
             <input className='p-2' type="text" placeholder='Name' name='name' />
