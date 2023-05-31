@@ -17,77 +17,39 @@ import Typescript from '../assets/typescript1.png';
 import Vue from '../assets/vue.png';
 
 const Skills = () => {
-  return (
-    <div className='w-full max-w-[1240px] mx-auto px-4'>
-            <p className='text-4xl font-bold md:p-4'>Skills</p>
-      <div className=' grid grid-cols-2 md:grid-cols-4 gap-8 p-4'>
-              <div className=' hover:scale-110 duration-500 '>
-                  <img className='w-20 mx-auto' src={HTML} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>HTML</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={CSS} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>CSS</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Java} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>JavaScript</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Typescript} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>Typescript</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={react} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>React</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Vue} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>Vue</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Angular} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>Angular</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Node} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>NodeJS</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Rest} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>Rest API'S</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Docker} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>Docker</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Kuber} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>Kubernetes</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={AWS} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>AWS Services</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Post} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>PostgreSQL</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Net} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>.Net</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={PHP} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>PHP</p>
-              </div>
-              <div className=' hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Git} alt="HTML icon" />
-                  <p className='my-4 text-center font-bold'>Github</p>
-              </div>
+    const skillsData = [
+      { image: HTML, text: 'HTML' },
+      { image: CSS, text: 'CSS' },
+      { image: Java, text: 'JavaScript' },
+      { image: Typescript, text: 'TypeScript' },
+      { image: react, text: 'ReactJs' },
+      { image: Vue, text: 'VueJs' },
+      { image: Angular, text: 'AngularJs' },
+      { image: Node, text: 'NodeJs' },
+      { image: Rest, text: 'Rest APIs' },
+      { image: Docker, text: 'Docker' },
+      { image: Kuber, text: 'Kubernetes' },
+      { image: Post, text: 'PostgreSQL' },
+      { image: AWS, text: 'AWS Services' },
+      { image: Net, text: '.NET' },
+      { image: PHP, text: 'PHP' },
+      { image: Git, text: 'Github' },
+    ];
+  
+    return (
+      <div className='w-full max-w-[1240px] mx-auto px-4'>
+        <p className='text-4xl font-bold md:p-4'>Skills</p>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-8 p-4'>
+          {skillsData.map((skill, index) => (
+            <div key={index} className='hover:scale-110 duration-500'>
+              <img className='w-20 mx-auto' src={skill.image} alt={skill.text + ' icon'} />
+              <p className='my-4 text-center font-bold'>{skill.text}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-  );
-};
-
-export default Skills;
+    );
+  };
+  
+  export default Skills;
+  
