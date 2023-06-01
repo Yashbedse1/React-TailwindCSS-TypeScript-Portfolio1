@@ -1,27 +1,31 @@
 import React from 'react';
 import QR from "../assets/QR.png";
 import {
-  FaDribbbleSquare,
-  FaFacebookSquare,
   FaGithubSquare,
-  FaInstagram,
   FaTwitterSquare,
+  FaLinkedin,
+  FaMailBulk
 } from 'react-icons/fa';
+
+
 
 
 const Footer = () => {
   return (
     
-    <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-black'>
+    <div className='max-w-full mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-white bg-black'>
       <div>
         <h1 className='w-full text-3xl font-bold text-black'>MyPortfolio.</h1>
         <p className='md:text-xl sm:text-lg text-md font-bold py-4'>Feel free to connect with me on social media</p>
         <ul className='flex justify-between md:w-[75%] my-6'>
-            <FaFacebookSquare size={30} />
-            <FaInstagram size={30} />
+          <a href="https://www.linkedin.com/in/yash-bedse/">
+          <FaLinkedin size={30} />
+          </a>
             <FaTwitterSquare size={30} />
+            <a href="https://github.com/Yashbedse1">
             <FaGithubSquare size={30} />
-            <FaDribbbleSquare size={30} />
+            </a>
+            <FaMailBulk size={30} title='bedseyash56@gmail.com'> </FaMailBulk>
         </ul>
       </div>
       <div className='lg:col-span-2 flex flex-col justify-center mt-3'>

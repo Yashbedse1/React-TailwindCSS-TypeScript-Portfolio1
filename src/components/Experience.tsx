@@ -48,7 +48,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className='text-black px-4 max-w-[1240px] mt-auto w-full pt-10 mx-auto text-left flex flex-col justify-left'>
+    <div className='text-black px-4 max-w-[1240px] mt-auto pt-40 w-full mx-auto text-left flex flex-col justify-center'>
       <p className='text-4xl font-bold '>Experience</p>
       {experienceData.map((experience, index) => (
         <div key={index} className=''>

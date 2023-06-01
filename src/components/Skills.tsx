@@ -37,7 +37,7 @@ const Skills = () => {
     ];
   
     return (
-      <div className='w-full max-w-[1240px] mx-auto px-4'>
+      <div className='max-w-[1240px] md:h-screen mx-auto px-4 mt-auto pt-40 text-left flex flex-col justify-center'>
         <p className='text-4xl font-bold md:p-4'>Skills</p>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-8 p-4'>
           {skillsData.map((skill, index) => (

@@ -8,8 +8,8 @@ const Navbar = () => {
     }
 
     return (
-        <div className='flex justify-between items-center h-24 max-w-full mx-auto px-4 text-black'>
-            <h1 className='w-full text-3xl font-bold text-black'>MyPortfolio.</h1>
+        <div className='flex justify-between items-center h-24 max-w-full mx-auto px-4 text-white bg-black fixed top-0 left-0 w-full z-10'>
+            <h1 className='w-full text-3xl font-bold text-white'>MyPortfolio.</h1>
             <ul className="hidden md:flex text-xl">
                 <li className="p-4 "><a href='/'>Home</a></li>
                 <li className="p-4"><a href='/education'>Education</a></li>
@@ -35,4 +35,4 @@ const Navbar = () => {
         </div>
     )
 }
-export default Navbar
+export default Navbar;
