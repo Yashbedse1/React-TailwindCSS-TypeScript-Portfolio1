@@ -19,7 +19,6 @@ const Education = () => {
         'Project: Employment Feedback by Securing Data Using anonymous authentication.'
       ]
     }
-    // Add more education data objects here
   ];
 
   return (
@@ -29,7 +28,7 @@ const Education = () => {
         {educationData.map((education, index) => (
           <div
             key={index}
-            className='w-full shadow-xl p-4 my-4 rounded-lg hover:scale-105 duration-300 border-black border-2'
+            className='w-full shadow-xl p-4 my-4 rounded-lg hover:scale-105 duration-300 border-black border-2 border-l-8'
           >
             <h1 className='md:text-3xl sm:text-2xl text-xl font-bold py-2'>{education.title}</h1>
             <p className='md:text-2xl sm:text-xl text-lg font-bold py-2'>{education.institution}</p>

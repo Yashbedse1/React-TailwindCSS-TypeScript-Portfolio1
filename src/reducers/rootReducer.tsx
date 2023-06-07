@@ -54,7 +54,6 @@ const rootReducer = (state = initialState, action: { type: any; }) => {
         default:
         return state;
     }
- 
 };
 
 export default rootReducer;

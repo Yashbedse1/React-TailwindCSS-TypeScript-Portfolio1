@@ -42,7 +42,7 @@ const Skills = () => {
         <div className='grid grid-cols-2 md:grid-cols-4 gap-8 p-4'>
           {skillsData.map((skill, index) => (
             <div key={index} className='hover:scale-110 duration-500'>
-              <img className='w-20 mx-auto' src={skill.image} alt={skill.text + ' icon'} />
+              <img className='w-40 mx-auto' src={skill.image} alt={skill.text + ' icon'} />
               <p className='my-4 text-center font-bold'>{skill.text}</p>
             </div>
           ))}
