@@ -34,7 +34,10 @@ const Education = () => {
             <p className='md:text-2xl sm:text-xl text-lg font-bold py-2'>{education.institution}</p>
             <ul className='md:text-lg sm:text-md text-sm font-medium'>
               {education.modules.map((module, moduleIndex) => (
-                <li key={moduleIndex} className='pb-2'>{module}</li>
+                <li key={moduleIndex} className='pb-2'>
+                   <span className="color-black mr-2">&bull; </span>
+                   {module}
+                </li>
               ))}
             </ul>
           </div>

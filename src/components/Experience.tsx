@@ -20,7 +20,8 @@ const Experience = ({ experienceData }: { experienceData: ExperienceData[] }) =>
           <div className='flex justify-left items-left'>
             <ul className='md:text-xl sm:text-md text-sm font-medium py-4'>
               {experience.responsibilities.map((responsibility, responsibilityIndex) => (
-                <li key={responsibilityIndex} className='pb-2'>{responsibility}</li>
+                <li key={responsibilityIndex} className='pb-2'>
+                   <span className="color-black mr-2">&bull; </span>{responsibility}</li>
               ))}
             </ul>
           </div>
