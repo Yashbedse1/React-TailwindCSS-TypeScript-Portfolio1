@@ -16,6 +16,7 @@ import Rest from '../assets/rest.png';
 import Typescript from '../assets/typescript1.png';
 import Vue from '../assets/vue.png';
 
+
 const Skills = () => {
     const skillsData = [
       { image: HTML, text: 'HTML' },
@@ -37,9 +38,9 @@ const Skills = () => {
     ];
   
     return (
-      <div className='max-w-[1240px] md:h-screen mx-auto px-4 mt-auto pt-40 text-left flex flex-col justify-center'>
+      <div id="skills" className='flex flex-col justify-center items-center mx-auto mt-auto px-4 py-16 max-w-full bg-black text-white'>
         <p className='text-4xl font-bold md:p-4'>Skills</p>
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-8 p-4'>
+        <div className='grid grid-cols-2 md:grid-cols-8 gap-16 p-4 max-w-full'>
           {skillsData.map((skill, index) => (
             <div key={index} className='hover:scale-110 duration-500'>
               <img className='w-20 mx-auto' src={skill.image} alt={skill.text + ' icon'} />

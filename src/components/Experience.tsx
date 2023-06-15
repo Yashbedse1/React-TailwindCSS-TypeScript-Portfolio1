@@ -12,10 +12,10 @@ interface ExperienceData {
 const Experience = ({ experienceData }: { experienceData: ExperienceData[] }) => {
 
   return (
-    <div className='text-black px-4 max-w-[1240px] mt-auto pt-40 w-full mx-auto text-left flex flex-col justify-center'>
-      <p className='text-4xl font-bold '>Experience</p>
+    <div id="experience" className='flex flex-col justify-center items-center max-w-full w-full mt-auto mx-auto py-16 px-4 bg-[#0A375D] text-white'>
+      <p className='text-4xl font-bold p-4'>Experience</p>
       {experienceData.map((experience, index) => (
-        <div key={index} className=''>
+        <div key={index} className='max-w-[1240px]'>
           <h1 className='md:text-3xl sm:text-2xl text-xl font-bold md:py-6'>{experience.title} - {experience.company} {experience.duration}</h1>
           <div className='flex justify-left items-left'>
             <ul className='md:text-xl sm:text-md text-sm font-medium py-4'>

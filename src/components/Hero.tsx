@@ -1,10 +1,16 @@
 import React from 'react';
 import Typed from 'react-typed';
+import Stack from '../assets/devv.jpg';
 
 const Hero = () => {
   return ( 
-    <div className='text-black'>
-      <div className='max-w-[1240px] mt-auto w-full h-screen mx-auto text-center flex flex-col justify-center'>
+    <div id="hero" className='text-white'>
+      <div 
+      style={{ backgroundImage: `url(${Stack})`, 
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat' }}
+      className='flex flex-col justify-center text-center mx-auto h-screen max-w-full w-full'>
         <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>
           Yash Bedse 
         </h1>
@@ -14,7 +20,7 @@ const Hero = () => {
        
         <div className='flex justify-center items-center'>
           <p className='md:text-4xl sm:text-3xl text-lg font-bold py-4'>
-            Holding experience in working as a 
+            Having experience working as a 
           </p>
           <Typed
           className='md:text-4xl sm:text-3xl text-lg font-bold md:pl-4 pl-2'

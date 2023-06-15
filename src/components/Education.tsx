@@ -22,9 +22,9 @@ const Education = () => {
   ];
 
   return (
-    <div className='w-full max-w-[1240px] mx-auto h-screen mt-auto py-16 px-4 text-left flex flex-col justify-center '>
-      <p className='text-4xl font-bold'>Education</p>
-      <div className='grid md:grid-cols-2 gap-8'>
+    <div id="education" className='flex flex-col justify-center items-center w-full max-w-full mx-auto mt-auto py-16 px-4 bg-[#0A375D] text-white'>
+      <p className='text-4xl font-bold p-4'>Education</p>
+      <div className='max-w-[1240px] grid md:grid-cols-2 gap-8'>
         {educationData.map((education, index) => (
           <div
             key={index}

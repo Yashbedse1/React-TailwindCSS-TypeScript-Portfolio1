@@ -10,7 +10,7 @@ import {
 const Footer = () => {
   return (
     
-    <div className='max-w-full mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-white bg-black'>
+    <div className='grid lg:grid-cols-3 gap-8 max-w-full mx-auto py-16 px-4 text-white bg-black'>
       <div>
         <h1 className='w-full text-3xl font-bold text-black'>MyPortfolio.</h1>
         <p className='md:text-xl sm:text-lg text-md font-bold py-4'>Feel free to connect with me on social media</p>
